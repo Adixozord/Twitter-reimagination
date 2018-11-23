@@ -15,7 +15,7 @@ public class AppInitializer {
         webCtx.setServletContext(servletContext);
 
         ServletRegistration.Dynamic dispatcherServlet = servletContext.addServlet("dispatcherServlet", new DispatcherServlet(webCtx));
-        dispatcherServlet.addMapping("/");
+        dispatcherServlet.addMapping("/twigger");
         dispatcherServlet.setLoadOnStartup(1);
     }
 }
